@@ -274,3 +274,182 @@ article {
     border-top: 1px solid #727272;
     padding-top: 10px;
 }
+
+
+/*-----Footer-----*/
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu a {
+    color: #fff;
+    font-size: 21px;
+    display: block;
+}
+
+.footer-menu p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.footer-box-1,
+.footer-box-2,
+.footer-box-3 {
+    color: #fff;
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-box-1 {
+    background-color: #39aae1;
+}
+
+.footer-box-2 {
+    background-color: #0079c7;
+}
+
+.footer-box-3 {
+    background-color: #2b4c99;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-area {
+    display: flex;
+}
+
+.footer-area-item {
+    flex: 1;
+    color: #fff;
+}
+
+
+/*-----Footer-Informações-----*/
+
+footer .widget-title-text {
+    color: #fff;
+}
+
+.footer-area-item p {
+    color: #727272;
+}
+
+.addres-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.phone-email span {
+    color: #fff;
+}
+
+.posts-info {
+    margin: 0 0 20px 17px;
+}
+
+.posts-info p {
+    color: #fff;
+}
+
+.posts-info span {
+    color: #0079c7;
+    font-size: 14px;
+}
+
+.footer-copy {
+    color: #5c5c5c;
+    border-top: 1px solid #2c2c2c;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.menu-Mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px 40px 0;
+}
+
+.mm-line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
+
+/*-----Responsividade-----*/
+
+@media (max-width:600px) {
+    .text-banner {
+        padding: 20px;
+    }
+    .text-banner h1 {
+        font-size: 55px;
+    }
+    .text-banner h2 {
+        font-size: 17px;
+    }
+    .banner-info {
+        flex-direction: column;
+        height: auto;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    .footer-menu {
+        flex-direction: column;
+    }
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-copy {
+        padding-left: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menu-Mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #banner {
+        display: flex;
+        justify-content: center;
+        background-image: url('img/moca-apontando.jpg');
+        background-position: center;
+        background-size: cover;
+        height: auto;
+    }
+}
